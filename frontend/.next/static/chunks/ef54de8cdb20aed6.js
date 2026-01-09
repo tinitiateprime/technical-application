@@ -1,0 +1,6 @@
+__turbopack_load_page_chunks__("/components/FavButton", [
+  "static/chunks/65e28fa9ba0fbd99.js",
+  "static/chunks/5d60f1ef03eaaf34.js",
+  "static/chunks/acf108a5e616596f.js",
+  "static/chunks/turbopack-b7d61c1d41d0a0f0.js"
+])
