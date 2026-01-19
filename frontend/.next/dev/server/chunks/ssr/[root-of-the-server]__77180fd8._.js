@@ -39,7 +39,9 @@ function SignInButton() {
     const { data: session } = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$next$2d$auth$2f$react__$5b$external$5d$__$28$next$2d$auth$2f$react$2c$__cjs$2c$__$5b$project$5d2f$node_modules$2f$next$2d$auth$29$__["useSession"])();
     if (session) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
-            onClick: ()=>(0, __TURBOPACK__imported__module__$5b$externals$5d2f$next$2d$auth$2f$react__$5b$external$5d$__$28$next$2d$auth$2f$react$2c$__cjs$2c$__$5b$project$5d2f$node_modules$2f$next$2d$auth$29$__["signOut"])(),
+            onClick: ()=>(0, __TURBOPACK__imported__module__$5b$externals$5d2f$next$2d$auth$2f$react__$5b$external$5d$__$28$next$2d$auth$2f$react$2c$__cjs$2c$__$5b$project$5d2f$node_modules$2f$next$2d$auth$29$__["signOut"])({
+                    callbackUrl: "/"
+                }),
             style: {
                 padding: "10px 20px",
                 fontSize: "16px",
@@ -70,7 +72,7 @@ function SignInButton() {
         children: "Sign in with Google"
     }, void 0, false, {
         fileName: "[project]/pages/components/SignInButton.tsx",
-        lineNumber: 27,
+        lineNumber: 31,
         columnNumber: 5
     }, this);
 }

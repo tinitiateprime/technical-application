@@ -8,15 +8,6 @@ self.__BUILD_MANIFEST = {
   "/dashboard": [
     "static/chunks/pages/dashboard.js"
   ],
-  "/repo/[slug]": [
-    "static/chunks/pages/repo/[slug].js"
-  ],
-  "/subject/[subject]": [
-    "static/chunks/pages/subject/[subject].js"
-  ],
-  "/topic/[topic]": [
-    "static/chunks/pages/topic/[topic].js"
-  ],
   "__rewrites": {
     "afterFiles": [],
     "beforeFiles": [],

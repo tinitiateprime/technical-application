@@ -1,198 +1,25 @@
-[00:00:03.450] Server  LOG     ✓ Ready in 2.8s
-[00:01:01.283] Server  LOG     ✓ Compiled in 67ms
-[00:01:09.688] Server  LOG     ✓ Compiled in 70ms
-[00:02:29.533] Server  LOG     ✓ Compiled in 63ms
-[00:02:38.483] Server  LOG     ✓ Compiled in 13ms
-[00:03:24.861] Server  LOG     ✓ Compiled in 74ms
-[00:03:25.811] Browser LOG     Refreshing page data due to server-side change
-[00:03:25.811] Browser ERROR   ./pages/dashboard.tsx:19:7
-Parsing ecmascript source code failed
-  17 |   return (Y
-  18 |     <div
-> 19 |       style={{
-     |       ^^^^^
-  20 |         minHeight: "100vh",
-  21 |         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-  22 |         backgroundColor: "#f0f2f5",
-
-Expected ',', got 'style'
-[00:03:26.408] Server  LOG     ✓ Compiled in 32ms
-[00:03:26.813] Browser LOG     Refreshing page data due to server-side change
-[00:03:37.680] Server  LOG     ✓ Compiled in 13ms
-[00:03:47.076] Server  LOG     ✓ Compiled in 21ms
-[00:04:23.837] Server  LOG     ✓ Compiled in 38ms
-[00:04:36.536] Server  LOG     ✓ Compiled in 20ms
-[00:04:36.639] Browser LOG     Refreshing page data due to server-side change
-[00:04:36.639] Browser ERROR   ./pages/dashboard.tsx:91:7
-Parsing ecmascript source code failed
-  89 |       </div>
-  90 |
-> 91 |       {/* Repositories / Tutorials */}
-     |       ^
-  92 |       <section
-  93 |         style={{
-  94 |           maxWidth: 900,
-
-Expected ',', got '{'
-[00:04:39.621] Server  LOG     ✓ Compiled in 39ms
-[00:04:39.823] Browser LOG     Refreshing page data due to server-side change
-[00:04:46.117] Server  LOG     ✓ Compiled in 18ms
-[00:04:46.819] Browser LOG     Refreshing page data due to server-side change
-[00:04:46.819] Browser ERROR   ./pages/dashboard.tsx:84:32
-Parsing ecmascript source code failed
-  82 |         <div>
-  83 |           <h2 style={{ margin: 0, fontSize: 20, color: "#202124" }}>
-> 84 |             {session.user?.name\}
-     |                                ^
-  85 |           </h2>
-  86 |           {/* Email hidden */}
-  87 |           {/* <p style={{ margin: 0, color: "#5f6368" }}>{session.user?.email}</p> */}
-
-Expected unicode escape
-[00:04:47.640] Server  LOG     ✓ Compiled in 27ms
-[00:04:47.811] Browser LOG     Refreshing page data due to server-side change
-[00:04:48.903] Server  LOG     ✓ Compiled in 39ms
-[00:04:49.810] Browser LOG     Refreshing page data due to server-side change
-[00:04:49.810] Browser ERROR   ./pages/dashboard.tsx:84:33
-Parsing ecmascript source code failed
-  82 |         <div>
-  83 |           <h2 style={{ margin: 0, fontSize: 20, color: "#202124" }}>
-> 84 |             {session.user?.name/}
-     |                                 ^
-  85 |           </h2>
-  86 |           {/* Email hidden */}
-  87 |           {/* <p style={{ margin: 0, color: "#5f6368" }}>{session.user?.email}</p> */}
-
-Expected '</', got '}'
-[00:04:50.989] Server  LOG     ✓ Compiled in 23ms
-[00:04:51.815] Browser ERROR   ./pages/dashboard.tsx:84:33
-Parsing ecmascript source code failed
-  82 |         <div>
-  83 |           <h2 style={{ margin: 0, fontSize: 20, color: "#202124" }}>
-> 84 |             {session.user?.name*/}
-     |                                 ^^
-  85 |           </h2>
-  86 |           {/* Email hidden */}
-  87 |           {/* <p style={{ margin: 0, color: "#5f6368" }}>{session.user?.email}</p> */}
-
-Unterminated regexp literal
-[00:04:58.044] Server  LOG     ✓ Compiled in 20ms
-[00:04:58.824] Browser ERROR   ./pages/dashboard.tsx:84:15
-Parsing ecmascript source code failed
-  82 |         <div>
-  83 |           <h2 style={{ margin: 0, fontSize: 20, color: "#202124" }}>
-> 84 |             {\*session.user?.name*/}
-     |               ^
-  85 |           </h2>
-  86 |           {/* Email hidden */}
-  87 |           {/* <p style={{ margin: 0, color: "#5f6368" }}>{session.user?.email}</p> */}
-
-Expression expected
-[00:04:58.824] Browser ERROR   ./pages/dashboard.tsx:84:35
-Parsing ecmascript source code failed
-  82 |         <div>
-  83 |           <h2 style={{ margin: 0, fontSize: 20, color: "#202124" }}>
-> 84 |             {\*session.user?.name*/}
-     |                                   ^^
-  85 |           </h2>
-  86 |           {/* Email hidden */}
-  87 |           {/* <p style={{ margin: 0, color: "#5f6368" }}>{session.user?.email}</p> */}
-
-Unterminated regexp literal
-[00:05:03.033] Server  LOG     ✓ Compiled in 12ms
-[00:05:03.816] Browser LOG     Refreshing page data due to server-side change
-[00:05:08.063] Server  LOG     ✓ Compiled in 12ms
-[00:05:10.709] Server  LOG     ✓ Compiled in 34ms
-[00:05:24.128] Server  LOG     ✓ Compiled in 16ms
-[00:05:24.817] Browser LOG     Refreshing page data due to server-side change
-[00:05:24.817] Browser ERROR   ./pages/dashboard.tsx:85:16
-Parsing ecmascript source code failed
-  83 |           {/* <h2 style={{ margin: 0, fontSize: 20, color: "#202124" }}> */}
-  84 |             {/* {session.user?.name} */}
-> 85 |           </h2>
-     |                ^
-> 86 |           {/* Email hidden */}
-     | ^^^^^^^^^^^
-  87 |           {/* <p style={{ margin: 0, color: "#5f6368" }}>{session.user?.email}</p> */}
-  88 |         </div>
-  89 |       </div>
-
-Expected '</', got 'jsx text (
-          )'
-[00:05:27.274] Server  LOG     ✓ Compiled in 23ms
-[00:05:27.814] Browser LOG     Refreshing page data due to server-side change
-[00:05:28.348] Server  LOG     ✓ Compiled in 63ms
-[00:05:35.910] Server  LOG     ✓ Compiled in 19ms
-[00:18:13.401] Server  LOG     ✓ Compiled in 22ms
-[00:18:34.025] Server  LOG     ✓ Compiled in 29ms
-[00:18:43.843] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./pages/dashboard.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:18:44.172] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/dashboard"
-[00:18:44.257] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/dashboard"
-[00:18:44.269] Server  LOG     ✓ Compiled in 36ms
-[00:18:44.544] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/dashboard"
-[00:18:44.614] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/dashboard"
-[00:18:44.830] Browser ERROR   uncaughtError: Error: The default export is not a React Component in page: "/dashboard"
-[00:19:28.320] Server  LOG     ✓ Compiled in 52ms
-[00:25:53.347] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('slug' !== 'topic').
-[00:25:53.352] Server  WARN    ⚠ Duplicate page detected. pages\subject\[subject].tsx and pages\subject\[subject]\index.tsx resolve to /subject/[subject]
-[00:25:53.377] Server  ERROR   Error: You cannot use different slug names for the same dynamic path ('slug' !== 'topic').
-[00:25:53.396] Server  ERROR   ⨯ "unhandledRejection:" Error: You cannot use different slug names for the same dynamic path ('slug' !== 'topic').
-[00:25:53.415] Server  ERROR   ⨯ "unhandledRejection: " Error: You cannot use different slug names for the same dynamic path ('slug' !== 'topic').
-[00:25:56.382] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('slug' !== 'topic').
-[00:25:56.404] Server  ERROR   Error: You cannot use different slug names for the same dynamic path ('slug' !== 'topic').
-[00:25:56.418] Server  ERROR   ⨯ "unhandledRejection:" Error: You cannot use different slug names for the same dynamic path ('slug' !== 'topic').
-[00:25:56.430] Server  ERROR   ⨯ "unhandledRejection: " Error: You cannot use different slug names for the same dynamic path ('slug' !== 'topic').
-[00:26:02.458] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('slug' !== 'topic').
-[00:26:10.193] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('slug' !== 'topic').
-[00:26:10.219] Server  ERROR   Error: You cannot use different slug names for the same dynamic path ('slug' !== 'topic').
-[00:26:10.241] Server  ERROR   ⨯ "unhandledRejection:" Error: You cannot use different slug names for the same dynamic path ('slug' !== 'topic').
-[00:26:10.257] Server  ERROR   ⨯ "unhandledRejection: " Error: You cannot use different slug names for the same dynamic path ('slug' !== 'topic').
-[00:26:13.843] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:26:13.869] Server  ERROR   Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:26:13.892] Server  ERROR   ⨯ "unhandledRejection:" Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:26:13.910] Server  ERROR   ⨯ "unhandledRejection: " Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:26:46.001] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:27:00.781] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:27:00.802] Server  ERROR   Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:27:00.819] Server  ERROR   ⨯ "unhandledRejection:" Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:27:00.834] Server  ERROR   ⨯ "unhandledRejection: " Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:27:24.012] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:27:30.307] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:27:41.570] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:27:54.453] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:27:54.480] Server  ERROR   Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:27:54.532] Server  ERROR   ⨯ "unhandledRejection:" Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:27:54.558] Server  ERROR   ⨯ "unhandledRejection: " Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[00:29:49.499] Server  LOG     ✓ Compiled in 15ms
-[00:34:51.402] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./pages/subject/[subject].tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:34:51.438] Server  LOG     ✓ Compiled in 47ms
-[00:34:51.649] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/subject/[subject]"
-[00:34:51.735] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/subject/[subject]"
-[00:34:51.956] Browser ERROR   uncaughtError: Error: The default export is not a React Component in page: "/subject/[subject]"
-[00:34:55.315] Server  LOG     ✓ Compiled in 19ms
-[00:36:28.525] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./pages/subject/[subject].tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:36:28.764] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/subject/[subject]"
-[00:36:28.848] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/subject/[subject]"
-[00:36:28.857] Server  LOG     ✓ Compiled in 34ms
-[00:36:29.091] Browser ERROR   uncaughtError: Error: The default export is not a React Component in page: "/subject/[subject]"
-[00:36:33.255] Server  LOG     ✓ Compiled in 25ms
-[00:51:27.886] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./pages/subject/[subject].tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:51:27.905] Server  LOG     ✓ Compiled in 42ms
-[00:51:28.136] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/subject/[subject]"
-[00:51:28.209] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/subject/[subject]"
-[00:51:28.425] Browser ERROR   uncaughtError: Error: The default export is not a React Component in page: "/subject/[subject]"
-[00:51:31.212] Server  LOG     ✓ Compiled in 36ms
-[01:05:26.614] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[01:05:26.641] Server  ERROR   Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[01:05:26.659] Server  ERROR   ⨯ "unhandledRejection:" Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[01:05:26.675] Server  ERROR   ⨯ "unhandledRejection: " Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[01:05:31.153] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('subject' !== 'topic').
-[01:12:27.847] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./pages/subject/[subject].tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[01:12:27.847] Browser LOG     Refreshing page data due to server-side change
-[01:12:27.870] Server  LOG     ✓ Compiled in 22ms
-[01:12:28.063] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/subject/[subject]"
-[01:12:28.149] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/subject/[subject]"
-[01:12:28.275] Browser ERROR   uncaughtError: Error: The default export is not a React Component in page: "/subject/[subject]"
-[01:12:40.102] Server  LOG     ✓ Compiled in 20ms
-[01:13:00.784] Browser ERROR   Failed to fetch topic: introduction {}
-[01:13:01.644] Browser ERROR   Failed to fetch topic: introduction {}
+[00:00:03.157] Server  LOG     ✓ Ready in 2.6s
+[00:00:09.914] Server  WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+[00:00:10.481] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+[00:00:16.898] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+[00:00:19.037] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+[00:01:29.439] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./pages/dashboard.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:01:29.461] Server  LOG     ✓ Compiled in 50ms
+[00:01:29.643] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/dashboard"
+[00:01:29.690] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/dashboard"
+[00:01:29.873] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/dashboard"
+[00:01:29.915] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/dashboard"
+[00:01:30.031] Browser ERROR   uncaughtError: Error: The default export is not a React Component in page: "/dashboard"
+[00:01:33.238] Server  LOG     ✓ Compiled in 111ms
+[00:01:38.696] Server  WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+[00:01:38.916] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+[00:01:45.838] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+[00:01:51.687] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component

@@ -471,23 +471,42 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-auth/react/index.js [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/router.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/index.js [client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
+;
 function Dashboard() {
     _s();
-    const { data: session } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useSession"])();
-    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    if (!session) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-        children: "Please sign in first."
-    }, void 0, false, {
-        fileName: "[project]/pages/dashboard.tsx",
-        lineNumber: 9,
-        columnNumber: 24
-    }, this);
+    const { data: session, status } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useSession"])();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    // 🔐 Protect dashboard
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Dashboard.useEffect": ()=>{
+            if (status === "unauthenticated") {
+                router.replace("/");
+            }
+        }
+    }["Dashboard.useEffect"], [
+        status,
+        router
+    ]);
+    if (status === "loading") {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            style: {
+                textAlign: "center"
+            },
+            children: "Loading..."
+        }, void 0, false, {
+            fileName: "[project]/pages/dashboard.tsx",
+            lineNumber: 18,
+            columnNumber: 12
+        }, this);
+    }
+    if (!session) return null;
     const repos = [
         {
             name: "Vue.js",
@@ -502,12 +521,14 @@ function Dashboard() {
         style: {
             minHeight: "100vh",
             fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-            backgroundColor: "#f0f2f5",
-            padding: "20px"
+            backgroundColor: "#f0f2f5"
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
                 style: {
+                    position: "sticky",
+                    top: 0,
+                    zIndex: 10,
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
@@ -519,74 +540,68 @@ function Dashboard() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         style: {
                             color: "#0070f3",
-                            fontWeight: 600,
                             fontSize: 24
                         },
                         children: "Tinitiate Dashboard"
                     }, void 0, false, {
                         fileName: "[project]/pages/dashboard.tsx",
-                        lineNumber: 36,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["signOut"])(),
+                        onClick: ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["signOut"])({
+                                callbackUrl: "/"
+                            }),
                         style: {
                             padding: "8px 18px",
                             backgroundColor: "#e53935",
                             color: "#fff",
                             border: "none",
-                            borderRadius: 5,
+                            borderRadius: 6,
                             cursor: "pointer",
                             fontWeight: 500
                         },
                         children: "Sign Out"
                     }, void 0, false, {
                         fileName: "[project]/pages/dashboard.tsx",
-                        lineNumber: 39,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/dashboard.tsx",
-                lineNumber: 26,
+                lineNumber: 37,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 style: {
                     display: "flex",
-                    alignItems: "center",
-                    padding: "20px 40px",
-                    marginTop: 20,
-                    backgroundColor: "#fff",
-                    borderRadius: 10,
-                    maxWidth: 700,
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
+                    justifyContent: "center",
+                    padding: 30
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                     src: session.user?.image || "",
                     alt: "User Avatar",
                     style: {
-                        width: 60,
-                        height: 60,
-                        borderRadius: "50%",
-                        objectFit: "cover"
+                        width: 70,
+                        height: 70,
+                        borderRadius: "50%"
                     }
                 }, void 0, false, {
                     fileName: "[project]/pages/dashboard.tsx",
-                    lineNumber: 70,
+                    lineNumber: 82,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/pages/dashboard.tsx",
-                lineNumber: 56,
+                lineNumber: 75,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 style: {
                     maxWidth: 900,
-                    margin: "40px auto",
+                    margin: "0 auto",
+                    padding: "20px",
                     display: "grid",
                     gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
                     gap: 20
@@ -598,66 +613,53 @@ function Dashboard() {
                             backgroundColor: "#fff",
                             borderRadius: 12,
                             boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-                            cursor: "pointer",
-                            transition: "all 0.2s"
-                        },
-                        onMouseOver: (e)=>{
-                            const el = e.currentTarget;
-                            el.style.transform = "translateY(-5px)";
-                            el.style.boxShadow = "0 8px 25px rgba(0,0,0,0.15)";
-                        },
-                        onMouseOut: (e)=>{
-                            const el = e.currentTarget;
-                            el.style.transform = "translateY(0)";
-                            el.style.boxShadow = "0 4px 20px rgba(0,0,0,0.08)";
+                            cursor: "pointer"
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 style: {
                                     margin: 0,
-                                    color: "#0070f3",
-                                    fontSize: 18
+                                    color: "#0070f3"
                                 },
                                 children: repo.name
                             }, void 0, false, {
                                 fileName: "[project]/pages/dashboard.tsx",
-                                lineNumber: 115,
+                                lineNumber: 116,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 style: {
-                                    marginTop: 6,
                                     fontSize: 14,
                                     color: "#5f6368"
                                 },
                                 children: "Click to view tutorial"
                             }, void 0, false, {
                                 fileName: "[project]/pages/dashboard.tsx",
-                                lineNumber: 118,
+                                lineNumber: 119,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, repo.slug, true, {
                         fileName: "[project]/pages/dashboard.tsx",
-                        lineNumber: 93,
+                        lineNumber: 105,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/pages/dashboard.tsx",
-                lineNumber: 83,
+                lineNumber: 94,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/dashboard.tsx",
-        lineNumber: 17,
+        lineNumber: 29,
         columnNumber: 5
     }, this);
 }
-_s(Dashboard, "xwQvZTIDPY4aHyS8h9XgPdunGG8=", false, function() {
+_s(Dashboard, "IsB+X4/uCtap/BkD4g9WA4/8vZ8=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useSession"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
 });
 _c = Dashboard;

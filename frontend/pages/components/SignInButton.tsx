@@ -7,7 +7,11 @@ export default function SignInButton() {
   if (session) {
     return (
       <button
-        onClick={() => signOut()}
+        onClick={() =>
+          signOut({
+            callbackUrl: "/",
+          })
+        }
         style={{
           padding: "10px 20px",
           fontSize: "16px",
@@ -40,3 +44,5 @@ export default function SignInButton() {
     </button>
   );
 }
+
+
