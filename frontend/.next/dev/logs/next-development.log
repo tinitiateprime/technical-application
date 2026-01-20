@@ -1,25 +1,5 @@
-[00:00:03.157] Server  LOG     ✓ Ready in 2.6s
-[00:00:09.914] Server  WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
+[00:00:02.685] Server  LOG     ✓ Ready in 2.2s
+[00:00:11.009] Server  WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
 See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
-[00:00:10.481] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
-See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
-[00:00:16.898] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
-See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
-[00:00:19.037] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
-See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
-[00:01:29.439] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./pages/dashboard.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:01:29.461] Server  LOG     ✓ Compiled in 50ms
-[00:01:29.643] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/dashboard"
-[00:01:29.690] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/dashboard"
-[00:01:29.873] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/dashboard"
-[00:01:29.915] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/dashboard"
-[00:01:30.031] Browser ERROR   uncaughtError: Error: The default export is not a React Component in page: "/dashboard"
-[00:01:33.238] Server  LOG     ✓ Compiled in 111ms
-[00:01:38.696] Server  WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
-See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
-[00:01:38.916] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
-See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
-[00:01:45.838] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
-See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
-[00:01:51.687] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
+[00:00:11.651] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
 See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
