@@ -1,5 +1,0 @@
-[00:00:02.685] Server  LOG     ✓ Ready in 2.2s
-[00:00:11.009] Server  WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
-See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
-[00:00:11.651] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap"). Use Document instead. 
-See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
