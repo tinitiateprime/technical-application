@@ -2,8 +2,8 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import { recordUserLogin } from "./utils/loginLogger";
-import { recordApiUsage } from "./utils/usageLogger";
+import { recordUserLogin } from "./app/src/utils/loginLogger";
+import { recordApiUsage } from "./app/src/utils/usageLogger";
 
 dotenv.config();
 
